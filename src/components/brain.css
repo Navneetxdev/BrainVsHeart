@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Playwrite+BE+WAL:wght@100..400&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#root {
+    height: 100%;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;  
+    width: 100vw;   
+}
+
+
+.brain, .heart {      
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100%;   
+    font-family: "Irish Grover", serif;
+    font-size: 2em;  
+    position: relative;
+}
+
+.brain{
+    width: 50%; 
+}
+
+.heart{
+    width: 50%; 
+}
+
+
+.heart {
+    background-color: #038E89;
+}
+
+.brain {
+    background-color: #CE371C;
+}
+
+.brain > h2 {
+    font-family: "Playwrite BE WAL", cursive;
+    font-style: italic;
+    font-size: 25px;
+    position: absolute;
+    top: 10px;          
+    left: 30px;         
+    margin: 0;          
+}
+
+@media (max-width: 800px) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    
+    }
+    .container {
+      flex-direction: column;
+      height: 100vh;  
+      width: 100vw; 
+    }
+
+    .brain{
+        width: 50%; 
+    }
+    
+    .heart{
+        width: 50%; 
+    }
+    .brain, .heart {      
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
+        width: 100%;   
+        font-family: "Irish Grover", serif;
+        font-size: 2em;  
+        position: relative;
+    }
+  }
+
