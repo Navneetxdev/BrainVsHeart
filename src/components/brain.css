@@ -5,7 +5,6 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -59,26 +58,12 @@ html, body {
 }
 
 @media (max-width: 800px) {
-
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    
-    }
     .container {
       flex-direction: column;
       height: 100vh;  
       width: 100vw; 
     }
 
-    .brain{
-        width: 50%; 
-    }
-    
-    .heart{
-        width: 50%; 
-    }
     .brain, .heart {      
         display: flex;
         justify-content: center;  
@@ -87,6 +72,16 @@ html, body {
         font-family: "Irish Grover", serif;
         font-size: 2em;  
         position: relative;
+    }
+
+    .brain > h2 {
+        font-family: "Playwrite BE WAL", cursive;
+        font-style: italic;
+        font-size: 10px;
+        position: absolute;
+        top: 12px;          
+        left: 30px;         
+        margin: 0;          
     }
   }
 

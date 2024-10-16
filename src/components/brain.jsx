@@ -8,14 +8,14 @@ function Brain({ notify }){
   useEffect(() => {
    const storedTime = localStorage.getItem('lastUpdated');
    if (storedTime) {
-     setLastUpdated(new Date(storedTime)); // Store it as a Date object
+     setLastUpdated(new Date(storedTime)); 
    }
  }, []);
 
  
  const updateLastClicked = () => {
    const currentTime = new Date();
-   localStorage.setItem('lastUpdated', currentTime.toISOString()); // Store as ISO string
+   localStorage.setItem('lastUpdated', currentTime.toISOString()); 
    setLastUpdated(currentTime);
  };
 
@@ -23,9 +23,9 @@ function Brain({ notify }){
    const today = new Date();
    
    if (lastUpdated && lastUpdated.toDateString() === today.toDateString()) {
-     console.log("You've already clicked today!"); // Warn the user
+     console.log("You've already clicked today!"); 
      notify("You've already clicked today! Please try again tomorrow.");
-     return; // Exit the function
+     return; 
    }
    
    
@@ -38,7 +38,7 @@ function Brain({ notify }){
    const today = new Date();
    
    if (lastUpdated && lastUpdated.toDateString() === today.toDateString()) {
-     console.log("You've already clicked today!"); // Warn the user
+     console.log("You've already clicked today!"); 
      notify("You've already clicked today! Please try again tomorrow.");
      return; 
    }
